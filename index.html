@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">How Can We Help?</a></li>
+							<li><a href="#two">What we do</a></li>
+							
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Welcome to CosmoGuide!</h1>
+							<p>Embark on an exciting journey through the cosmos with CosmoGuide, your beginner-friendly portal to the wonders of space.</br> Whether you're a curious student, an aspiring astronomer, or simply fascinated by the universe, our website is here to ignite your passion for space exploration!
+
+							</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Dive in!</a></li>
+							</ul>
+						</div>
+					</section>
+					<section id="one" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>How can we help?</h2>
+							<p>At CosmoGuide, we're dedicated to making your journey through space exploration as engaging and educational as possible. Here’s how we can assist you:</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-robot"></span>
+									<h3>Ai Chatbot</h3>
+									<p>CosmoChat is specifically trained to answer your space questions and guide you through our space-focused content. Just ask and explore the universe!</p>
+									<ul class="actions">
+										<li><a href="#chatbot" class="button">Learn More</a></li>
+									</ul>
+								</section>
+								
+							
+								<section>
+									<span class="icon solid major fa-image"></span>
+									<h3>Space Photo of the day</h3>
+									<p>Discover today’s breathtaking view of the cosmos! Each day, we bring you a stunning image captured from the far reaches of space, showcasing the beauty and mystery of our universe!</p>
+								    <ul class="actions">
+										<li><a href="#spacephoto" class="button">Let me see</a></li>
+									</ul>
+								</section>
+								
+								<section>
+									<span class="icon solid major fa-question"></span>
+									<h3>Intresting facts about space</h3>
+									<p>Discover today’s breathtaking view of the cosmos! Each day, we bring you a stunning image captured from the far reaches of space, showcasing the beauty and mystery of our universe. Dive in and be amazed!</p>
+									<ul class="actions">
+										<li><a href="#facts" class="button">Let me hear</a></li>
+									</ul>
+								</section>
+							</div>
+							
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="two" class="wrapper style2 spotlights">
+						<section id="chatbot" style="border: 5px solid rgb(0, 0, 0);">
+							<a href="#" class="image" style="background-image: url(&quot;images/cosmochat.png&quot;); background-position: 25% 25%;"><img src="images/cosmochat.png" alt="" data-position="25% 25%" style="display: none;"></a>
+
+							<div class="content">
+								<div class="inner">
+									<h2>Meet CosmoChat!</h2>
+									<p>Say hello to CosmoChat, your personal space chatbot!</br> CosmoChat is here to answer your questions, guide you through our content, and provide instant insights into the vast expanse of space. Just type in your query, and let CosmoChat lead the way.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Lets Chat!</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section id="facts" style="background-color: black; border: 2px solid white;">
+							<div class="content">
+								<div class="inner">
+									<h2>Random Fact About Space</h2>
+								</br>
+									<h3 id="fact" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Click the button to get a new space fact!</h3>
+								 </br>
+									<button id="newFactButton">One more</button>
+						
+								</div>
+							</div>
+						</section>
+						<section id="spacephoto" style="border: 2px solid white;">
+							<div class="content">
+								<div class="inner">
+									<div id="dailyImage">
+										<h1>Daily Space Picture</h1>
+										<img id="spaceImage" src="" alt="Daily Space Picture">
+										<p id="imageDescription" style="font-size: 30px; color: white;"></p>
+									</div>
+									
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					
+
+				<!-- Three -->
+					
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; CosmoGuide All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				const facts = [
+    "The Universe is expanding: The universe has been expanding since the Big Bang, and it's still growing.",
+    "The Sun is 109 times wider than Earth: You could fit about 1.3 million Earths inside the Sun.",
+    "Neutron stars are incredibly dense: A sugar-cube-sized amount of neutron-star material would weigh about 100 million tons.",
+    "Space is completely silent: Sound waves need a medium to travel through, and space is a vacuum.",
+    "The Moon is moving away from Earth: It's drifting away at about 3.8 centimeters per year.",
+    "One day on Venus is longer than one year on Venus: Venus takes 243 Earth days to rotate once but only 225 Earth days to orbit the Sun.",
+    "Jupiter's Great Red Spot is a massive storm: It has been raging for at least 400 years.",
+    "There are more stars in the universe than grains of sand on all Earth's beaches: Estimates say there are around 100 billion galaxies, each with billions of stars.",
+    "Mars has the tallest volcano in the solar system: Olympus Mons stands about 22 kilometers high.",
+    "The coldest place in the universe is the Boomerang Nebula: It has a temperature of -272°C (-458°F).",
+    "A day on Mercury lasts about 59 Earth days: This is because of its slow rotation and rapid orbit around the Sun.",
+    "Saturn could float in water: Its density is lower than that of water.",
+    "There is a massive storm on Saturn: The Great White Spot appears every 30 years.",
+    "The largest volcano in the solar system is on Mars: Olympus Mons is three times the height of Mount Everest.",
+    "The largest canyon in the solar system is Valles Marineris on Mars: It stretches for over 4,000 kilometers.",
+    "Neptune's winds are the fastest in the solar system: They can reach speeds of up to 2,400 kilometers per hour.",
+    "Space is not completely empty: There are tiny particles and radiation scattered throughout.",
+    "The Hubble Space Telescope has been orbiting Earth since 1990: It has provided some of the most detailed images of distant galaxies.",
+    "You would weigh less on the Moon: Gravity on the Moon is about 1/6th that of Earth's.",
+    "Pluto has a heart-shaped glacier: Named Sputnik Planitia, it's one of the largest known glaciers in the solar system.",
+    "The Sun accounts for 99.86% of the mass of the solar system.",
+    "The closest galaxy to the Milky Way is the Andromeda Galaxy: It is about 2.5 million light-years away.",
+    "If you could drive a car to the Sun at 100 kilometers per hour, it would take about 170 years.",
+    "The largest known star is UY Scuti: Its diameter is about 1,700 times that of the Sun.",
+    "Astronauts’ height changes in space: They can grow up to 2 inches taller due to the lack of gravity compressing their spine.",
+    "The 'Man on the Moon' photograph was taken during Apollo 11: Neil Armstrong and Buzz Aldrin were the first humans to walk on the Moon.",
+    "A single teaspoon of a neutron star would weigh about 6 billion tons.",
+    "The Moon has quakes: They are known as moonquakes and can be caused by tidal forces or meteor impacts.",
+    "The longest possible time someone can survive in space without a suit is about 15 seconds.",
+    "Jupiter has a magnetic field that is 14 times stronger than Earth’s.",
+    "There are more planets in the Milky Way than there are stars.",
+    "The Sun's core is about 15 million degrees Celsius.",
+    "The Milky Way galaxy is on a collision course with the Andromeda Galaxy: The two galaxies will merge in about 4.5 billion years.",
+    "There are 'rogue' planets in space: These are planets not bound to any star and drift through the galaxy.",
+    "The ISS orbits Earth about every 90 minutes.",
+    "The farthest galaxy ever observed is over 13 billion light-years away.",
+    "There are diamonds on Neptune and Uranus: The extreme pressure inside these planets can form diamonds.",
+    "The Moon has a 'dark side': It’s not truly dark but is the far side that’s always facing away from Earth.",
+    "Astronauts on the ISS can see 16 sunrises and sunsets each day.",
+    "One spoonful of a black hole’s matter could contain the mass of several billion Earths.",
+    "Venus rotates in the opposite direction to most other planets: This means it has a retrograde rotation.",
+    "A year on Pluto is about 248 Earth years.",
+    "There are moons orbiting asteroids: Some asteroids have their own moons.",
+    "The largest known black hole is in the galaxy M87: It has a mass of about 6.5 billion times that of the Sun.",
+    "The Sun's light takes about 8 minutes and 20 seconds to reach Earth.",
+    "Astronauts have to exercise for about 2 hours a day on the ISS to maintain bone density and muscle mass.",
+    "The Orion Nebula is one of the brightest nebulae visible to the naked eye.",
+    "Space has 'smells': Some astronauts have described a smell similar to seared steak or hot metal when re-entering the ISS.",
+    "Mercury has ice at its poles: Despite being the closest planet to the Sun, it has permanently shadowed craters with ice.",
+    "Pluto has five known moons: Charon, Styx, Nix, Kerberos, and Hydra.",
+    "Saturn’s rings are made mostly of water ice: Some of the particles are as small as dust grains.",
+    "The largest volcano in the solar system, Olympus Mons, has a diameter of about 600 kilometers.",
+    "The Voyager 1 spacecraft is the farthest human-made object from Earth: It entered interstellar space in 2012.",
+    "The Cassini spacecraft spent 13 years exploring Saturn and its moons before ending its mission in 2017.",
+    "The Moon’s surface is covered in a layer of fine dust called regolith.",
+    "Some stars are so dense that a single spoonful would weigh about as much as Mount Everest.",
+    "The Kuiper Belt is a region of the solar system beyond Neptune filled with icy bodies and dwarf planets.",
+    "The 'Pillars of Creation' is a famous image taken by the Hubble Space Telescope of towering columns of gas and dust.",
+    "A quasar is a highly luminous and energetic object found in the early universe.",
+    "The Sun’s outer atmosphere is hotter than its surface: The corona reaches temperatures of over 1 million degrees Celsius.",
+    "The Earth’s magnetic field protects us from harmful solar radiation.",
+    "The Moon has a very thin atmosphere called an exosphere.",
+    "There is a region around Earth called the Van Allen radiation belts: It contains high-energy particles trapped by Earth's magnetic field.",
+    "There are thousands of known exoplanets: Planets outside our solar system orbiting other stars.",
+    "The universe is about 13.8 billion years old.",
+    "The 'Great Attractor' is a mysterious gravitational anomaly pulling galaxies towards it.",
+    "A 'blue moon' refers to the second full moon in a calendar month.",
+    "The Solar System is located in the Milky Way Galaxy’s Orion Arm.",
+    "The Hubble Space Telescope has captured images of galaxies in various stages of evolution.",
+    "There is a potential for life on Europa, one of Jupiter’s moons, which has a subsurface ocean beneath its icy crust.",
+    "Stars are born in nebulae, vast clouds of gas and dust.",
+    "The 'Hubble Deep Field' image revealed thousands of galaxies in a tiny patch of sky.",
+    "Astronauts on the ISS experience microgravity, making objects and fluids behave differently.",
+    "The Lyrid meteor shower is an annual event that occurs in April.",
+    "Saturn’s moon Titan has lakes and rivers of liquid methane and ethane on its surface.",
+    "The Andromeda Galaxy is expected to collide with the Milky Way in about 4.5 billion years.",
+    "The James Webb Space Telescope, launched in December 2021, is designed to observe the universe in infrared.",
+    "The Moon’s surface has been visited by twelve astronauts.",
+    "The observable universe is about 93 billion light-years in diameter.",
+    "A supernova is the explosion of a star at the end of its life cycle.",
+    "The 'Fermi Paradox' addresses the apparent contradiction between the high probability of extraterrestrial life and the lack of evidence.",
+    "Dark matter and dark energy make up about 95% of the universe."
+];
+		
+				const factElement = document.getElementById('fact');
+				const button = document.getElementById('newFactButton');
+		
+				function getRandomFact() {
+					const randomIndex = Math.floor(Math.random() * facts.length);
+					return facts[randomIndex];
+				}
+		
+				button.addEventListener('click', () => {
+					factElement.textContent = getRandomFact();
+				});
+			</script>
+		    <script>
+				const images = [
+					{ src: 'images/heic1006a_M66_1024.jpg', description: 'Apollo 11 Landing Panorama' },
+					{ src: 'images/RhoAntares_Stocks_1080_annotated.jpg', description: 'Colorful Stars and Clouds near Rho Ophiuchi' },
+					{ src: 'images/a11pan1040226lftsm600.jpg', description: 'Messier 66 Close Up' },
+					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+					{ src: 'images/AR3664Prom_Voltmer_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+					{ src: 'images/NGC2169LRGBQHY183HR_c1024', description: 'The 37 Cluster' },
+					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+
+					
+				];
+		
+				function getDailyImageIndex() {
+					const start = new Date('2024-01-01').getTime();
+					const now = new Date().getTime();
+					const dayInMs = 24 * 60 * 60 * 1000;
+					return Math.floor((now - start) / dayInMs) % images.length;
+				}
+		
+				function loadDailyImage() {
+					const index = getDailyImageIndex();
+					const image = images[index];
+					document.getElementById('spaceImage').src = image.src;
+					document.getElementById('imageDescription').textContent = image.description;
+				}
+		
+				loadDailyImage();
+			</script>
+			
+
+	</body>
+</html>
