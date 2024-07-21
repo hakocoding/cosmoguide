@@ -213,6 +213,29 @@ input, select, textarea {
 				right: 0;
 				width: 100%;
 			}
+			h2.major {
+				margin: 0 0 1.3em 0;
+				position: relative;
+				padding-bottom: 0.35em;
+			}
+	
+				h2.major:after {
+					background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+					background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
+					background-image: -ms-linear-gradient(to right, #5e42a6,#b74e91);
+					background-image: linear-gradient(to right, #5e42a6,#b74e91);
+					-moz-transition: max-width 0.2s ease;
+					-webkit-transition: max-width 0.2s ease;
+					-ms-transition: max-width 0.2s ease;
+					transition: max-width 0.2s ease;
+					border-radius: 0.2em;
+					bottom: 0;
+					content: '';
+					height: 0.05em;
+					position: absolute;
+					left: 0;
+					width: 40%;
+				}	
 
 	h2 {
 		font-size: 1.75em;
@@ -3907,4 +3930,33 @@ input, select, textarea {
 			}
 
 		}
-		
+		.background-section {
+			height: 50vh; /* Section'ın yüksekliği tam ekran yapar */
+			background-image: url('images/93034.jpg	');
+			background-size: cover; /* Resmi tam olarak kaplayacak şekilde ölçekler */
+			background-position: center; /* Resmi ortalar */
+			background-repeat: no-repeat; /* Resmin tekrarlanmamasını sağlar */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			color: white;
+			text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Yazının okunabilirliğini artırmak için gölge ekler */
+		}		
+		#dailyImage{
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+
+		}
+		.background-main {
+			
+			background-image: url('images/space.jpg');
+			background-size: cover; /* Resmi tam olarak kaplayacak şekilde ölçekler */
+			background-position: center; /* Resmi ortalar */
+			background-repeat: no-repeat; /* Resmin tekrarlanmamasını sağlar */
+			
+			color: white;
+			text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Yazının okunabilirliğini artırmak için gölge ekler */
+		}		
