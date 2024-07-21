@@ -30,7 +30,7 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Welcome to CosmoGuide!</h1>
+							<h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif">Welcome to CosmoGuide!</h1>
 							<p>Embark on an exciting journey through the cosmos with CosmoGuide, your beginner-friendly portal to the wonders of space.</br> Whether you're a curious student, an aspiring astronomer, or simply fascinated by the universe, our website is here to ignite your passion for space exploration!
 
 							</p>
@@ -78,7 +78,7 @@
 
 				<!-- One -->
 					<section id="two" class="wrapper style2 spotlights">
-						<section id="chatbot" style="border: 5px solid rgb(0, 0, 0);">
+						<section id="chatbot" style="border: 4px solid white; "  class="background-main">
 							<a href="#" class="image" style="background-image: url(&quot;images/cosmochat.png&quot;); background-position: 25% 25%;"><img src="images/cosmochat.png" alt="" data-position="25% 25%" style="display: none;"></a>
 
 							<div class="content">
@@ -91,12 +91,12 @@
 								</div>
 							</div>
 						</section>
-						<section id="facts" style="background-color: black; border: 2px solid white;">
+						<section id="facts" style="background-color: black; border: 2px solid white;"  class="background-section">
 							<div class="content">
 								<div class="inner">
-									<h2>Random Fact About Space</h2>
+									<h2 style="font-style: italic;">Random Fact About Space</h2>
 								</br>
-									<h3 id="fact" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Click the button to get a new space fact!</h3>
+									<h3 id="fact" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Click the button to get a new space fact!</h3>
 								 </br>
 									<button id="newFactButton">One more</button>
 						
@@ -108,8 +108,9 @@
 								<div class="inner">
 									<div id="dailyImage">
 										<h1>Daily Space Picture</h1>
-										<img id="spaceImage" src="" alt="Daily Space Picture">
+										<img id="spaceImage" src="" alt="Daily Space Picture" style="border: 4px solid black;">
 										<p id="imageDescription" style="font-size: 30px; color: white;"></p>
+										<p id="date" style="font-size: 20px; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-style: italic;"></p>
 									</div>
 									
 								</div>
@@ -247,15 +248,7 @@
 					{ src: 'images/a11pan1040226lftsm600.jpg', description: 'Messier 66 Close Up' },
 					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
 					{ src: 'images/AR3664Prom_Voltmer_960.jpg', description: 'Sh2-132: The Lion Nebula' },
-					{ src: 'images/NGC2169LRGBQHY183HR_c1024', description: 'The 37 Cluster' },
-					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
-					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
-					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
-					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
-					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
-					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
-					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
-					{ src: 'images/LionNeb_Badr_960.jpg', description: 'Sh2-132: The Lion Nebula' },
+					{ src: 'images/NGC2169LRGBQHY183HR_c1024', description: 'The 37 Cluster' },					
 
 					
 				];
@@ -272,6 +265,10 @@
 					const image = images[index];
 					document.getElementById('spaceImage').src = image.src;
 					document.getElementById('imageDescription').textContent = image.description;
+
+					const today = new Date();
+                    const formattedDate = today.toISOString().split('T')[0];
+                    document.getElementById('date').textContent = `Today: ${formattedDate}`;
 				}
 		
 				loadDailyImage();
